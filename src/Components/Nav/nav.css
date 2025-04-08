@@ -1,0 +1,218 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/* Custom Font */
+@font-face {
+    font-family: 'NebulaHollow';
+    src: url('/src/assets/font/Nebula-Hollow.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NulshockBold';
+    src: url('/src/assets/font/Nulshock\ Bd.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/* Base Styles */
+body {
+    background: linear-gradient(to right, #050113, #080014);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1 {
+    font-family: 'NulshockBold', sans-serif;
+    font-weight: bold;
+    color: #00ffea;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(to right, #050113, #080014);
+    padding: 15px;
+    /* Reduce padding for a more compact navbar */
+    border: 3px solid #ff007f;
+    /* Reduce border thickness */
+    border-radius: 150px;
+    /* Slightly smaller border radius */
+    margin: 15px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    /* Slightly smaller brand font size */
+    color: white;
+}
+
+.navbar-nav {
+    flex-direction: column;
+    /* Stacks items vertically */
+}
+
+
+.nav-link {
+    font-family: 'NebulaHollow', serif;
+    font-size: 1rem;
+    color: white;
+    margin: 0 8px;
+    /* Reduce space between nav links */
+    font-size: 1rem;
+    /* Smaller font size for nav links */
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff007f;
+
+}
+
+/* Buttons */
+.book-Nav {
+    font-family: 'NebulaHollow', serif;
+    font-size: 1rem; /* Smaller font */
+    background-color: #ff0077;
+    color: white;
+    border-radius: 30px;
+    padding: 8px 18px;
+    /* Reduce padding for a smaller button */
+    text-decoration: none;
+    transition: 0.3s;
+    border: none;
+}
+
+.book-Nav :hover {
+    background-color: #041a2c;
+}
+
+
+
+/* Mobile Responsiveness */
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    /* Ensure the "Book a Call" button is at the top */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        /* Add padding for better spacing */
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        /* Adjust font size for mobile */
+        padding: 10px 0;
+        /* Add padding to create more space between links */
+        text-align: center;
+        /* Center align nav links */
+    }
+
+    .book-Nav  {
+        order: -1;
+        /* Ensure the "Book a Call" button is on top */
+        width: 100%;
+        /* Make the button span the full width on mobile */
+        margin-bottom: 20px;
+        /* Add margin at the bottom for spacing */
+    }
+
+    /* Toggler (Hamburger icon) */
+    .navbar-toggler {
+        margin-top: 5px;
+        /* Add space above the hamburger button */
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ff007f' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    /* Ensure that the collapsible navbar items align vertically */
+    .navbar-collapse {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* Stack navbar items vertically */
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+        /* Make nav items take up full width */
+    }
+
+    .nav-link {
+        display: block;
+        padding: 10px 0;
+        /* Add padding for better spacing */
+        width: 100%;
+        /* Ensure each link takes up full width */
+        text-align: center;
+        /* Center align links */
+    }
+
+   
+    
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Adjust navbar items */
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+        margin: 5px 0;
+    }
+}
+
+
+/* Responsive tweaks for navbar */
+@media (max-width: 991px) {
+    .navbar {
+        padding: 15px 10px;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .book-Nav {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+
+
+}

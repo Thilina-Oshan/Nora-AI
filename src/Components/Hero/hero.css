@@ -1,0 +1,67 @@
+
+/* Buttons */
+.book-btn {
+    font-family: 'NebulaHollow', serif;
+    font-size: 1.5rem;
+    background-color: #ff0077;
+    color: white;
+    border-radius: 30px;
+    padding: 8px 18px;
+    /* Reduce padding for a smaller button */
+    text-decoration: none;
+    transition: 0.3s;
+    border: none;
+}
+
+.book-btn:hover {
+    background-color: #ff3399;
+}
+
+
+.know-btn {
+    font-family: 'NebulaHollow', serif;
+    font-size: 1.5rem;
+    background: transparent;
+    color: white;
+    border-radius: 30px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.know-btn:hover {
+    background: white;
+    color: #0b0c10;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #050113, #080014);
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.highlight {
+    color: #ff007f;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
