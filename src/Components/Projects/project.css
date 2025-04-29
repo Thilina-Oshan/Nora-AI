@@ -75,7 +75,9 @@
   }
   
   .project-btn {
-    border: 1px solid #b28eff;
+    border: 1px solid #a582ff;
+    box-shadow: 0 0 12px rgba(106, 64, 243, 0.5);
+    font-family: 'NulshockBold', sans-serif;
     font-size: 4px;
     color: #fff;
     padding: 0.5px 20px;

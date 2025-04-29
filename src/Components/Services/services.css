@@ -1,0 +1,56 @@
+/* Custom Font */
+@font-face {
+    font-family: 'NebulaHollow';
+    src: url('/src/assets/font/Nebula-Hollow.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NulshockBold';
+    src: url('/src/assets/font/Nulshock\ Bd.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body {
+    background-color: #0d0d0d;
+  }
+  
+  .service-card {
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    transition: transform 0.3s;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(138, 94, 255, 0.4);
+  }
+  
+  .text-pink {
+    color: #e45bff;
+  }
+  
+  .service-title{
+
+    
+    font-family: 'NulshockBold', sans-serif;
+    font-weight: bold;
+    color: #00ffea;
+  }
+
+  h2{
+    
+    font-family: 'NulshockBold', sans-serif;
+    font-weight: bold;
+    color: #00ffea;
+  }
+
+
+  
