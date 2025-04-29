@@ -74,3 +74,13 @@
     background: #7d58ff;
   }
   
+  .project-btn {
+    border: 1px solid #b28eff;
+    font-size: 4px;
+    color: #fff;
+    padding: 0.5px 20px;
+    border-radius: 30px;
+    background: transparent;
+    margin: 20px auto;
+    display: inline-block;
+  }

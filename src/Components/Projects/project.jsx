@@ -33,7 +33,7 @@ const ProjectsSection = () => {
   return (
     <section className="p-5" id="abouth">
       <div style={{ maxWidth: '64rem', margin: '0 auto', textAlign: 'center' }}>
-        <div className="about-btn">
+        <div className="project-btn">
           <h3>Project</h3>
         </div>
 
