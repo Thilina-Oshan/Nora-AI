@@ -78,3 +78,65 @@
     background: linear-gradient(to right, #ec4899, #8b5cf6);
     border-radius: 50%;
 }
+
+
+h2{
+
+    font-family: 'NulshockBold', sans-serif;
+    font-weight: bold;
+    color: #00ffea;
+
+}
+
+
+h5{
+
+    font-family: 'NulshockBold', sans-serif;
+    font-weight: bold;
+    color: #00ffea;
+
+}
+
+
+
+h2.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .highlight-text {
+    font-weight: 700;
+    font-size: 26px;
+  }
+
+  .info-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 10px;
+  }
+
+  .unique-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .projects-highlight {
+    background: linear-gradient(to right, #6d28d9, #c084fc);
+    color: #fff;
+    padding: 50px 0;
+    margin-top: 60px;
+    border-radius: 0 0 100% 100% / 20%;
+  }
+
+  .projects-highlight h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .projects-highlight p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
