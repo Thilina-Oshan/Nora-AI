@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Navbar from "./Components/Nav/navbar";
 import Hero from "./Components/Hero/hero";
+import AboutSection from "./Components/About/about";
 
 /* import "./App.css";  */
 
@@ -15,6 +16,7 @@ function App() {
      
      <Navbar/>
      <Hero/>
+     <AboutSection/>
 
     </>
   )

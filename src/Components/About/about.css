@@ -1,0 +1,80 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/* Custom Font */
+@font-face {
+    font-family: 'NebulaHollow';
+    src: url('/src/assets/font/Nebula-Hollow.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NulshockBold';
+    src: url('/src/assets/font/Nulshock\ Bd.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+ .about-btn {
+      border: 2px solid #b28eff;
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: 30px;
+      background: transparent;
+      font-size: 14px;
+      margin: 20px auto;
+      display: inline-block;
+    }
+
+.about-heading {
+
+    font-family: 'NulshockBold', sans-serif;
+    font-weight: bold;
+    color: #00ffea;
+}
+
+
+.about-contentBox {
+
+    background: linear-gradient(135deg, #222244, #595968);
+    /* Example gradient */
+    padding: 1rem;
+    border-radius: 0.8rem;
+
+}
+
+
+.about-content {
+    font-size: 1rem;
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+.about-title-box {
+    background: linear-gradient(to right, #1f1f2e, #2c2c3e);
+    padding: 0.4rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: fit-content;
+    margin: 3rem auto; /* center horizontally with spacing above */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .about-title-box h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+  }
+  
+.underline-circle {
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #ec4899, #8b5cf6);
+    border-radius: 50%;
+}
