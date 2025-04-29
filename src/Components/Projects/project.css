@@ -1,0 +1,76 @@
+/* Custom Font */
+@font-face {
+    font-family: 'NebulaHollow';
+    src: url('/src/assets/font/Nebula-Hollow.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+  .title-project {
+    background: linear-gradient(145deg, #9c9baa, #fefdff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  
+  
+  .custom-pill {
+    background: linear-gradient(145deg, #6a40f3, #b083ff);
+    color: white;
+    padding: 0.6em 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    box-shadow: 0 0 10px rgba(106, 64, 243, 0.6);
+  }
+  
+  .custom-heading {
+    color: #dcdcec;
+    font-size: 1.75rem;
+  }
+  
+  .text-purple {
+    color: #a882ff;
+  }
+  
+  .project-card {
+    background: linear-gradient(to bottom, #1a1a1a, #111);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .category-pill {
+    border: 1px solid #999;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    border-radius: 999px;
+    color: #aaa;
+  }
+  
+  .custom-btn-pill {
+    font-family: 'NulshockBold', sans-serif;
+    font-weight: lighter;
+    color: #00ffea;
+    border: 1px solid #a582ff;
+    color: white;
+  /*   background: linear-gradient(90deg, #6a40f3, #a882ff); */
+    padding: 0.6rem 2rem;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    box-shadow: 0 0 12px rgba(106, 64, 243, 0.5);
+    transition: background 0.3s ease;
+  }
+  .custom-btn-pill:hover {
+    background: #7d58ff;
+  }
+  

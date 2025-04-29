@@ -4,6 +4,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import Navbar from "./Components/Nav/navbar";
 import Hero from "./Components/Hero/hero";
 import AboutSection from "./Components/About/about";
+import ProjectsSection from "./Components/Projects/project";
 
 /* import "./App.css";  */
 
@@ -17,6 +18,7 @@ function App() {
      <Navbar/>
      <Hero/>
      <AboutSection/>
+     <ProjectsSection/>
 
     </>
   )
