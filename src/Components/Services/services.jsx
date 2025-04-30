@@ -1,5 +1,6 @@
 import React from "react";
-import './services.css'; // Optional: use this if you have extra styles
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./services.css"; // Optional CSS file for additional styling
 
 const services = [
   {
@@ -60,39 +61,59 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="bg-black text-white py-16 px-4 relative" id="services">
-      <div className="max-w-6xl mx-auto text-center z-10 relative">
-        <div className="mb-4">
-          <span className="px-4 py-1 rounded-full bg-purple-600 text-white text-sm uppercase tracking-wide">
-            Services
-          </span>
+    <section id="services" className="service-title   text-white py-5 position-relative">
+      {/* Header */}
+      <div className="container text-center">
+        <div className="services-btn mb-2">
+          <h3 className="text-uppercase text-light">Services</h3>
         </div>
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">
+        <h2 className="fw-bold display-6 mt-3">
           TRANSFORMING BUSINESSES <br /> WITH AI & DIGITAL SOLUTIONS
         </h2>
+      </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 z-10 relative">
+      {/* Service Cards */}
+      <div className="container py-5 position-relative">
+        <div className="row g-4 justify-content-center">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-[#1a1a1a] p-6 rounded-xl shadow-md transition-transform hover:-translate-y-2 hover:shadow-purple-500/20"
-            >
-              <div className="mb-4">
-                <img src={service.icon} alt={service.title} className="mx-auto" />
+            <div className="col-md-4" key={index}>
+              <div className="card service-card h-100 p-4 bg-secondary text-white border-0">
+                <div className="mb-3 text-center">
+                  <img src={service.icon} alt={service.title} />
+                </div>
+                <h5 className="fw-bold text-center">{service.title}</h5>
+                <ul className="small mt-3">
+                  {service.items.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
               </div>
-              <h5 className="font-semibold text-lg mb-3">{service.title}</h5>
-              <ul className="text-sm text-gray-300 space-y-1 text-left">
-                {service.items.map((item, idx) => (
-                  <li key={idx}>• {item}</li>
-                ))}
-              </ul>
             </div>
           ))}
         </div>
+
+        {/* Glow Background Effect */}
+        <div
+          className="position-absolute top-50 start-50 translate-middle z-n1"
+          style={{
+            width: "800px",
+            height: "400px",
+            background: "radial-gradient(circle, rgba(138,94,255,0.3) 0%, transparent 70%)",
+            filter: "blur(100px)",
+            borderRadius: "50%",
+          }}
+        ></div>
       </div>
 
-      {/* Glow Background Effect */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] rounded-full bg-purple-600 opacity-20 blur-3xl z-0" />
+      {/* Call to Action */}
+      <div className="text-center mt-4 pb-5">
+        <p className="fw-semibold fst-italic text-light">
+          Ready to transform your marketing with AI?{" "}
+          <a href="#" className="text-pink fw-bold text-decoration-none">
+            Contact us today!
+          </a>
+        </p>
+      </div>
     </section>
   );
 };
