@@ -7,6 +7,7 @@ import Hero from "./Components/Hero/hero";
 import AboutSection from "./Components/About/about";
 import ProjectsSection from "./Components/Projects/project";
 import Services from "./Components/Services/services";
+import Testimonials from "./Components/Testimonals/testimonals";
 
 /* import "./App.css";  */
 
@@ -22,6 +23,7 @@ function App() {
      <AboutSection/>
      <ProjectsSection/>
      <Services/>
+     <Testimonials/>
 
     </>
   );

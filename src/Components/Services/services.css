@@ -28,19 +28,23 @@
   }
   
   .service-card {
-    background: #1a1a1a;
-    color: white;
-    border: none;
+    background: rgba(255, 255, 255, 0.05); /* lighter transparent background */
+    backdrop-filter: blur(12px) saturate(150%); /* stronger blur + clarity */
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* clearer outline */
     border-radius: 1rem;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
     z-index: 2;
+    box-shadow: inset 0 0 0.5px rgba(255, 255, 255, 0.1);
+  }
+    
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(138, 94, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.1);
   }
   
-  .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(138, 94, 255, 0.4);
-  }
   
   .text-pink {
     color: #e45bff;

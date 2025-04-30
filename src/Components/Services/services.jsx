@@ -23,7 +23,7 @@ const services = [
   },
   {
     title: "AI Chatbot & AI Agent",
-    icon: "https://img.icons8.com/ios/50/ffffff/chatbot.png",
+    icon: "/src/assets/img/icons8-ai-50.png",
     items: [
       "Automated customer engagement.",
       "AI virtual assistants for interactions.",
@@ -32,7 +32,7 @@ const services = [
   },
   {
     title: "Digital Marketing",
-    icon: "https://img.icons8.com/ios/50/ffffff/marketing.png",
+    icon: "/src/assets/img/icons8-digital-marketing-50.png",
     items: [
       "AI-powered SEO, content, and campaign strategy.",
       "Social media optimization.",
@@ -77,7 +77,7 @@ const Services = () => {
         <div className="row g-4 justify-content-center">
           {services.map((service, index) => (
             <div className="col-md-4" key={index}>
-              <div className="card service-card h-100 p-4 bg-secondary text-white border-0">
+              <div className="card service-card h-100 p-4 text-white border-0">
                 <div className="mb-3 text-center">
                   <img src={service.icon} alt={service.title} />
                 </div>
