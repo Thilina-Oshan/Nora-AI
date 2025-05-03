@@ -61,7 +61,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="service-title   text-white py-5 position-relative">
+    <section id="services" className="service-title   text-white py-5 position-relative ">
       {/* Header */}
       <div className="container text-center">
         <div className="services-btn mb-2">
@@ -77,7 +77,7 @@ const Services = () => {
         <div className="row g-4 justify-content-center">
           {services.map((service, index) => (
             <div className="col-md-4" key={index}>
-              <div className="card service-card h-100 p-4 text-white border-0">
+              <div className="card service-card h-100 p-4 text-white">
                 <div className="mb-3 text-center">
                   <img src={service.icon} alt={service.title} />
                 </div>

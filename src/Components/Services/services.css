@@ -1,16 +1,16 @@
 /* Custom Font */
 @font-face {
-    font-family: 'NebulaHollow';
-    src: url('/src/assets/font/Nebula-Hollow.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'NebulaHollow';
+  src: url('/src/assets/font/Nebula-Hollow.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'NulshockBold';
-    src: url('/src/assets/font/Nulshock\ Bd.otf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'NulshockBold';
+  src: url('/src/assets/font/Nulshock\ Bd.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 
@@ -25,44 +25,40 @@
   background: transparent;
   margin: 20px auto;
   display: inline-block;
-  }
-  
-  .service-card {
-    background: rgba(255, 255, 255, 0.05); /* lighter transparent background */
-    backdrop-filter: blur(12px) saturate(150%); /* stronger blur + clarity */
-    -webkit-backdrop-filter: blur(12px) saturate(150%);
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.2); /* clearer outline */
-    border-radius: 1rem;
-    transition: transform 0.3s, box-shadow 0.3s;
-    position: relative;
-    z-index: 2;
-    box-shadow: inset 0 0 0.5px rgba(255, 255, 255, 0.1);
-  }
-    
-  .service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 25px rgba(138, 94, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.1);
-  }
-  
-  
-  .text-pink {
-    color: #e45bff;
-  }
-  
-  .service-title{
+}
 
-    font-family: 'NulshockBold', sans-serif;
-    font-weight: bold;
-    color: #00ffea;
-  }
+.service-card {
+  background: linear-gradient(to right, #050113, #080014);
+  background-color: #1c1c1c;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 1px solid white; /* Visible now */
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+}
 
-  h2{
-    
-    font-family: 'NulshockBold', sans-serif;
-    font-weight: bold;
-    color: #00ffea;
-  }
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(138, 94, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.1);
+}
 
 
-  
+.text-pink {
+  color: #e45bff;
+}
+
+.service-title {
+
+  font-family: 'NulshockBold', sans-serif;
+  font-weight: bold;
+  color: #00ffea;
+}
+
+h2 {
+
+  font-family: 'NulshockBold', sans-serif;
+  font-weight: bold;
+  color: #00ffea;
+}
