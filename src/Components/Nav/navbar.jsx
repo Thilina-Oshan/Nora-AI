@@ -38,9 +38,9 @@ const Navbar = () => {
         <div className={`collapse navbar-collapse justify-content-end ${expanded ? "show" : ""}`} id="navbarNav">
           <ul className="navbar-nav align-items-center text-center">
             {[
-              { name: "Home", href: "#hero" },
+              { name: "Home", href: "#home" },
               { name: "About", href: "#about" },
-              { name: "Projects", href: "#projects" },
+              { name: "Projects", href: "#projrcts" },
               { name: "Services", href: "#services" },
               { name: "Testimonials", href: "#tesmo" },
               { name: "Packages", href: "#packages" },

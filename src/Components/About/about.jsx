@@ -3,7 +3,7 @@ import "./about.css";
 
 const AboutSection = () => {
     return (
-        <section style={{ width: '100%', padding: '4rem 1rem' }}>
+        <section id='about' style={{ width: '100%', padding: '4rem 1rem' }}>
             <div style={{ maxWidth: '64rem', margin: '0 auto', textAlign: 'center' }} id="abouth">
 
                 <div className="about-btn">

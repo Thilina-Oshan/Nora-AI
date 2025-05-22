@@ -18,8 +18,16 @@
     font-style: normal;
 }
 
+:root {
+  scroll-padding-top: 100px; /* Adjust if needed based on navbar height */
+}
 
 /* Base Styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background: linear-gradient(to right, #050113, #080014);
     font-family: 'Poppins', sans-serif;
@@ -45,6 +53,7 @@ h1 {
     border-radius: 150px;
     /* Slightly smaller border radius */
     margin: 15px;
+    transition: background-color 0.3s ease;
 }
 
 .navbar-brand {
@@ -67,7 +76,7 @@ h1 {
     /* Reduce space between nav links */
     font-size: 1rem;
     /* Smaller font size for nav links */
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover {
