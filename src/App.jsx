@@ -23,7 +23,7 @@ function App() {
      <AboutSection/>
      <ProjectsSection/>
      <Services/>
-     <Testimonials/>
+     <Testimonials/> 
 
     </>
   );

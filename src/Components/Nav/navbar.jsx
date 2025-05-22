@@ -10,15 +10,19 @@ const Navbar = () => {
     setExpanded(!expanded);
   };
 
+  const handleNavClick = () => {
+    setExpanded(false); // Collapse navbar on link click (mobile)
+  };
+
   return (
-    <nav className="navbar navbar-expand-lg p-3 fixed-top">
+    <nav className="navbar navbar-expand-lg fixed-top p-3 shadow-sm bg-dark">
       <div className="container">
-        {/* Brand Logo */}
-        <a className="navbar-brand" href="#">
+        {/* Logo */}
+        <a className="navbar-brand text-white" href="#hero" onClick={handleNavClick}>
           <img src="/src/assets/img/Logo- Colored.svg" alt="Logo" height="40" />
         </a>
 
-        {/* Toggler Button */}
+        {/* Toggle Button */}
         <button
           className="navbar-toggler"
           type="button"
@@ -30,21 +34,36 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Navbar Links */}
+        {/* Links */}
         <div className={`collapse navbar-collapse justify-content-end ${expanded ? "show" : ""}`} id="navbarNav">
           <ul className="navbar-nav align-items-center text-center">
-            {["Home", "About", "Projects", "Services", "Testimonies", "Packages", "Tools"].map((item, i) => (
+            {[
+              { name: "Home", href: "#hero" },
+              { name: "About", href: "#about" },
+              { name: "Projects", href: "#projects" },
+              { name: "Services", href: "#services" },
+              { name: "Testimonials", href: "#tesmo" },
+              { name: "Packages", href: "#packages" },
+              { name: "Tools", href: "#tools" },
+            ].map((item, i) => (
               <li className="nav-item" key={i}>
-                <a className="nav-link" style={{ fontSize: "1.2rem" }} href="#">
-                  {item}
+                <a
+                  className="nav-link text-white mx-2"
+                  style={{ fontSize: "1.1rem" }}
+                  href={item.href}
+                  onClick={handleNavClick}s
+                >
+                  {item.name}
                 </a>
               </li>
             ))}
-            <li className="nav-item mt-3 mt-lg-0 text-nowrap">
+            {/* CTA Button */}
+            <li className="nav-item mt-3 mt-lg-0">
               <a
-                href="#"
-                className="btn book-Nav w-100 w-lg-auto"
+                href="#contact"
+                className="btn  book-Nav text-white ms-lg-3 px-4book-Nav w-100 w-lg-auto"
                 style={{ fontSize: "1.2rem" }}
+                onClick={handleNavClick}
               >
                 Book a Call
               </a>
