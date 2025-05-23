@@ -30,7 +30,7 @@
 .service-card {
   background: linear-gradient(to right, #050113, #080014);
   background-color: #1c1c1c;
-  backdrop-filter: blur(5px);
+ backdrop-filter: blur(var(--blur));
   -webkit-backdrop-filter: blur(5px);
   border-radius: 20px;
   border: 1px solid white; /* Visible now */

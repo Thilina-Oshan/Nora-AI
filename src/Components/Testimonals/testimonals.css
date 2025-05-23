@@ -44,3 +44,54 @@
   margin: 20px auto;
   display: inline-block;
 }
+
+
+body {
+  background: radial-gradient(ellipse at center, #0a0014 0%, #050013 100%);
+  font-family: 'Work Sans', sans-serif;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ddd;
+  letter-spacing: 2px;
+}
+
+.badge-glow {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  color: #ccc;
+  box-shadow: 0 0 30px 8px rgba(180, 80, 255, 0.6);
+}
+
+.testimonial-card {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(180, 80, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-card .stars {
+  color: #b450ff;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.main-card {
+  transform: scale(1.1);
+  z-index: 1;
+  box-shadow: 0 0 40px 10px rgba(180, 80, 255, 0.6);
+}
