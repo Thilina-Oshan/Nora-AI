@@ -42,11 +42,15 @@ const Navbar = () => {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
+
+
         </button>
 
         {/* Navbar links */}
         <div className={`collapse navbar-collapse justify-content-end ${expanded ? "show" : ""}`} id="navbarNav">
-          <ul className="navbar-nav align-items-center text-center">
+          <ul className="navbar-nav align-items-center text-center w-100">
             {navLinks.map((item, i) => (
               <li className="nav-item" key={i}>
                 <a

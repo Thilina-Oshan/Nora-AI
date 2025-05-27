@@ -36,6 +36,19 @@ const Testimonials = () => {
           <p className="text-muted small mb-2">Founder of Example Corp</p>
           <p>"Their service has been a game-changer! We're thrilled with the outcome and professionalism!"</p>
         </div>
+
+   {/* Glow Effect Background */}
+          <div
+            className="position-absolute top-50 start-50 translate-middle z-0"
+            style={{
+              width: "600px",
+              height: "300px",
+              background: "radial-gradient(circle, rgba(138,94,255,0.5) 0%, transparent 70%)",
+              filter: "blur(100px)",
+              borderRadius: "50%",
+            }}
+          ></div>
+
       </div>
      
       </div>

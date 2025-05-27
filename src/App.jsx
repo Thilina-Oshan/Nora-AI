@@ -9,6 +9,7 @@ import ProjectsSection from "./Components/Projects/project";
 import Services from "./Components/Services/services";
 import Testimonials from "./Components/Testimonals/testimonals";
 
+
 /* import "./App.css";  */
 
 
@@ -24,6 +25,7 @@ function App() {
      <ProjectsSection/>
      <Services/>
      <Testimonials/> 
+    
 
     </>
   );

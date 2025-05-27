@@ -1,0 +1,60 @@
+/* Custom Font */
+@font-face {
+  font-family: 'NebulaHollow';
+  src: url('/asset/font/Nebula-Hollow.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* Section Title */
+.section-title {
+  color: #d0d0e0;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+/* Card */
+.tool-card {
+  background: linear-gradient(135deg, #1b1a2e, #19182a);
+  color: #c8c8f8;
+  box-shadow: 0 0 20px rgba(80, 80, 120, 0.3);
+  border: 1px solid #2e2b5f;
+}
+
+/* Logo inside card */
+.tool-logo {
+  width: 80px;
+  height: auto;
+}
+
+/* Subtitle */
+.tool-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #a6a3f8;
+}
+
+/* Description */
+.tool-description {
+  font-size: 14px;
+  color: #bcbce2;
+}
+
+/* Button */
+.try-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #7b70ff;
+  border-radius: 25px;
+  padding: 10px 24px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+.try-btn:hover {
+  background-color: #7b70ff;
+  color: #000;
+}
