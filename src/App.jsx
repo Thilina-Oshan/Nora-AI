@@ -9,6 +9,8 @@ import ProjectsSection from "./Components/Projects/project";
 import Services from "./Components/Services/services";
 import Testimonials from "./Components/Testimonals/testimonals";
 import Contact from "./Components/Contact/contact";
+import BlogSection from "./Components/Blog/blogSection";
+
 
 
 /* import "./App.css";  */
@@ -27,6 +29,8 @@ function App() {
      <Services/>
      <Testimonials/> 
      <Contact/>
+     <BlogSection/>
+   
     
 
     </>

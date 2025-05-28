@@ -1,0 +1,39 @@
+
+
+.glow-badge {
+  display: inline-block;
+  padding: 10px 30px;
+  background: #111;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 15px #a78bfa;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.text-glow {
+  color: #e0e0ff;
+  text-shadow: 0 0 8px #a78bfa;
+}
+
+.glow-button {
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #a78bfa;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  box-shadow: 0 0 10px #a78bfa;
+  transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+  background-color: #a78bfa;
+  color: black;
+}
