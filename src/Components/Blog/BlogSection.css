@@ -1,5 +1,3 @@
-
-
 .glow-badge {
   display: inline-block;
   padding: 10px 30px;
@@ -36,4 +34,10 @@
 .glow-button:hover {
   background-color: #a78bfa;
   color: black;
+}
+
+.blogImage{
+
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(142, 124, 255, 0.8);
 }

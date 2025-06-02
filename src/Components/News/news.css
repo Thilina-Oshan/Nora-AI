@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+
+
+.newsletter-section {
+  background: radial-gradient(circle at top left, rgba(168, 129, 255, 0.2), rgba(255, 0, 255, 0.1));
+  border-radius: 20px;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 900px;
+  box-shadow: 0 0 30px rgba(167, 139, 250, 0.3);
+}
+
+.newsletter-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+.newsletter-subtitle {
+  font-size: 0.95rem;
+  color: #aaa;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.newsletter-form input {
+  background-color: #1f1f2e;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  padding: 0.75rem 1rem;
+  color: white;
+  width: 100%;
+}
+
+.newsletter-form button {
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background: linear-gradient(to right, #d63384, #a78bfa);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+  background: linear-gradient(to right, #a78bfa, #d63384);
+}
+
+@media (min-width: 576px) {
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .newsletter-form input {
+    width: auto;
+    flex: 1;
+  }
+}

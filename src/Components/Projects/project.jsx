@@ -31,7 +31,7 @@ const projectData = [
 
 const ProjectsSection = () => {
   return (
-    <section className="p-5" id="projrcts">
+    <section className="p-5" id="projects">
       <div style={{ maxWidth: '64rem', margin: '0 auto', textAlign: 'center' }}>
         <div className="project-btn">
           <h3>Project</h3>
